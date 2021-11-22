@@ -1041,6 +1041,10 @@ for this copy of PHP. We apologize for the inconvenience.
       pi_php8="yes"
       ;;
 
+    8.1.*)
+      pi_php8="yes"
+      ;;
+
     *)
       error "unsupported version '${pi_ver}' of PHP found at:
     ${pdir}
@@ -1217,6 +1221,7 @@ does not exist. This particular instance of PHP will be skipped.
     7.3.*)  pi_modver="20180731" ;;
     7.4.*)  pi_modver="20190902" ;;
     8.0.*)  pi_modver="20200930" ;;
+    8.1.*)  pi_modver="20210902" ;;
   esac
   log "${pdir}: pi_modver=${pi_modver}"
 

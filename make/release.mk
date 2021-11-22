@@ -139,6 +139,7 @@ release-$1-zts: Makefile agent | releases/$$(RELEASE_OS)/agent/$$(RELEASE_ARCH)/
 
 endef
 
+$(eval $(call RELEASE_AGENT_TARGET,8.1,20210902))
 $(eval $(call RELEASE_AGENT_TARGET,8.0,20200930))
 $(eval $(call RELEASE_AGENT_TARGET,7.4,20190902))
 $(eval $(call RELEASE_AGENT_TARGET,7.3,20180731))
