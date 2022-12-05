@@ -2910,11 +2910,11 @@ STD_PHP_INI_ENTRY_EX("newrelic.application_logging.metrics.enabled",
 
 PHP_INI_END() /* } */
 
-void nr_php_register_ini_entries(int module_number TSRMLS_DC) {
+void nr_php_register_ini_entries(int module_number TSRMLS_DC, int type) {
   REGISTER_INI_ENTRIES();
 }
 
-void nr_php_unregister_ini_entries(int module_number TSRMLS_DC) {
+void nr_php_unregister_ini_entries(int module_number TSRMLS_DC, int type) {
   UNREGISTER_INI_ENTRIES();
 }
 

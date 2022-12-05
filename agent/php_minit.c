@@ -456,7 +456,7 @@ PHP_MINIT_FUNCTION(newrelic) {
    */
   nr_php_generate_internal_wrap_records();
 
-  nr_php_register_ini_entries(module_number TSRMLS_CC);
+  nr_php_register_ini_entries(module_number TSRMLS_CC, type);
 
   if (0 == NR_PHP_PROCESS_GLOBALS(enabled)) {
   disbad:

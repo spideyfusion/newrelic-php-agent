@@ -41,9 +41,9 @@ ifeq (osx,$(RELEASE_OS))
 endif
 
 # Set the default PHP versions we will build.
-PHPS?=8.1 8.0 7.4 7.3 7.2 7.1 7.0 5.6 5.5
+PHPS?=8.2 8.1 8.0 7.4 7.3 7.2 7.1 7.0 5.6 5.5
 # Set the PHP versions we support on 64-bit OSs.
-SUPPORTED_64=8.1 8.0 7.4 7.3 7.2 7.1 7.0 5.6 5.5
+SUPPORTED_64=8.2 8.1 8.0 7.4 7.3 7.2 7.1 7.0 5.6 5.5
 # Set the PHP versions we support on 32-bit OSs.
 SUPPORTED_32=
 # Of the PHP versions we want to build, determine which are supported on the detected OS.
@@ -144,6 +144,7 @@ release-$1-zts: Makefile agent | releases/$$(RELEASE_OS)/agent/$$(RELEASE_ARCH)/
 
 endef
 
+$(eval $(call RELEASE_AGENT_TARGET,8.2,20220829))
 $(eval $(call RELEASE_AGENT_TARGET,8.1,20210902))
 $(eval $(call RELEASE_AGENT_TARGET,8.0,20200930))
 $(eval $(call RELEASE_AGENT_TARGET,7.4,20190902))

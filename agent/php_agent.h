@@ -116,8 +116,8 @@ extern char* nr_php_backtrace_callback(void);
  *
  * Returns : Nothing.
  */
-extern void nr_php_register_ini_entries(int module_number TSRMLS_DC);
-extern void nr_php_unregister_ini_entries(int module_number TSRMLS_DC);
+extern void nr_php_register_ini_entries(int module_number TSRMLS_DC, int type);
+extern void nr_php_unregister_ini_entries(int module_number TSRMLS_DC, int type);
 
 /*
  * Some agent functions require an object handle. At present, this is defined
